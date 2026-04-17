@@ -27,17 +27,17 @@ Select ONE Additional
     <h1>My Top 3 Memories of <span>This Year</span></h1>
     <ol>
       <li>
-        <h3 id="mem1">Memory #1</h3>
+        <h3 id="mem1">Winter Dance Showcase</h3
         <p>More about this memory.</p>
       </li>
 
       <li>
-        <h3 id="mem2">Memory #2</h3>
+        <h3 id="mem2">Vacation</h3>
         <p>More about this memory.</p>
       </li>
 
       <li>
-        <h3 id="mem3">Memory #3</h3>
+        <h3 class="mem3">💕</h3>
         <p>More about this memory</p>
       </li>
     </ol>
@@ -48,18 +48,30 @@ Select ONE Additional
       // ======================== Button #1
       $("#mem1-button").click(function () {
         $("#mem1").css("color", "purple");
+         $("#mem1").text("Senior🤗.");
       });
 
       // ======================== Button #2
       $("#mem2-button").click(function () {
         $("#mem2").css("color", "blue");
+        $("#mem2").text("Mexico🍦 .");
+        
       });
 
       // ======================== Button #3
       $("#mem3-button").click(function () {
         $("#mem3").css("color", "green");
-        $("#mem3").text("Coding Parties! 🎉");
+        $(".mem3").text("Foods😋.");
       });
+
+      $("#mem1").text("Winter Dance Showcase💕");
+      $("#mem2").text("Vacation💕");
+      $(".mem3").text("Food💕");
+    $("h3").css("color", "rgb(50, 127, 168)");
+      
+
+
+      
 
 
     </script>

@@ -27,34 +27,48 @@ Select ONE Additional
     <h1>My Top 3 Memories of <span>This Year</span></h1>
     <ol>
       <li>
-        <h3 id="mem1">Winter Dance Showcase</h3
-        <p>More about this memory.</p>
+        <h3 id="mem1">Winter Dance Showcase</h3>
+        <p id="senior"> More about this memory.</p>
+        <img class="show" src="dance.JPG" width="200">
       </li>
 
       <li>
         <h3 id="mem2">Vacation</h3>
-        <p>More about this memory.</p>
+        <p id="vaca">More about this memory.</p>
+        <img class="mexico" src="mexico.JPG" width="200">
       </li>
 
       <li>
         <h3 class="mem3">💕</h3>
-        <p>More about this memory</p>
-      </li>
+        <p id="good">More about this memory</p>
+        <img class="food" src="penne.JPG" width="200">
+        </li>
     </ol>
+
+  
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
+
+      $(".show").hide();
+      $(".mexico").hide();
+      $(".food").hide();
+
 
       // ======================== Button #1
       $("#mem1-button").click(function () {
         $("#mem1").css("color", "purple");
          $("#mem1").text("Senior🤗.");
+         $("#senior").text("The winter dance show was one of the best moments I’ve ever experienced because it was exciting, energizing, and full of joy. As I stood on stage under the spotlight, I felt nervousness, some degree of confidence, but mostly pride in what we all accomplished. Dancing with my peers made the whole event even more memorable since we encouraged each other not only during rehearsals but also right until the end of the show. Our efforts were worth it, and it was clear that there was passion in each move we performed.");
+         $(".show").show(200)
       });
 
       // ======================== Button #2
       $("#mem2-button").click(function () {
         $("#mem2").css("color", "blue");
         $("#mem2").text("Mexico🍦 .");
+        $("#vaca").text("Ok so me and my family went to mexico to celebrate my mothers 50th birthday! We went to cancun mexico and stayed in the nicest resort ever. We had many pool days, many fancy dinners, and many late night beach swims. Me and my family love the beach because we get to tan, play vollyball and do many other things. We had so much fun on this trip and would for sure be going back this summer.")
+        $(".mexico").show(200)
         
       });
 
@@ -62,13 +76,17 @@ Select ONE Additional
       $("#mem3-button").click(function () {
         $("#mem3").css("color", "green");
         $(".mem3").text("Foods😋.");
+        $("#good").text("If you did not know already I am obsessed with this type of pasta. I made several projects for this class on this pasta. It will always taste to rich to me. I love how creamy and light the pasta taste. I swear I can eat this pasta everyday of my long lasting life and never get sick of it")
+        $("#good").html("<i>If you did not know already</i> I am obsessed with this type of pasta. I made several projects for this class on this pasta. It will always taste to rich to me. I love how creamy and light the pasta taste. I swear I can eat this pasta everyday of my long lasting life and never get sick of it.");
+        $(".food").show(200)
       });
 
       $("#mem1").text("Winter Dance Showcase💕");
       $("#mem2").text("Vacation💕");
       $(".mem3").text("Food💕");
     $("h3").css("color", "rgb(50, 127, 168)");
-      
+    
+ 
 
 
       

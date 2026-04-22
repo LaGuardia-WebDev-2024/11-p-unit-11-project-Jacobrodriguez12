@@ -10,3 +10,18 @@ html {
 h1 {
   font-family: "Poetsen One", sans-serif;
 }
+
+body {
+  background-color: rgb(198, 245, 232);
+}
+
+h1 {
+  color: pink;
+}
+
+p {
+  color: rgb(14, 219, 255);
+}
+
+
+

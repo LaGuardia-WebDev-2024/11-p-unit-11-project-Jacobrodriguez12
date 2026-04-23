@@ -9,14 +9,14 @@ html {
 /* ======================== CSS Rule #2 */
 h1 {
   font-family: "Poetsen One", sans-serif;
+  color: pink;
 }
 
 body {
   background-color: rgb(198, 245, 232);
 }
-
-h1 {
-  color: pink;
+img {
+  border-radius: 20px
 }
 
 p {
